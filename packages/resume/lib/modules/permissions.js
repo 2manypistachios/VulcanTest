@@ -1,16 +1,18 @@
-import Users from 'meteor/vulcan:users';
-
 /*
 
-Permissions for members (regular users)
-
-Uncomment on #Step17
+Posts permissions
 
 */
 
+import Users from 'meteor/vulcan:users';
+
 const membersActions = [
-  'movie.create',
-  'movie.update.own',
-  'movie.delete.own',
+  'movies.new', 
+  'movies.edit.own', 
+  'movies.remove.own',
+  'movies.laughing',
+  'movies.happy',
+  'movies.angry',
+  'movies.sad',
 ];
 Users.groups.members.can(membersActions);

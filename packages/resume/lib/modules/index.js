@@ -1,7 +1,10 @@
-import './collection.js';
+// The Movies collection
+import './movies/index.js';
+
+// Routes
+import './voting.js';
+import './fragments.js';
 import './components.js';
 import './routes.js';
-import './fragments.js';
 import './permissions.js';
-import './views.js';
-import './i18n.js';
+import './custom_fields.js';
